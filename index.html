@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Blog">
+    <meta name="keywords" content="hilmi, ege, kara, personal, Blog">
+    <meta name="authors" content="Hilmi Ege Kara">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Personel Blog</title>
+</head>
+<body>
+
+    <!--SIDEBAR-->
+    <input type="checkbox" id="checksb">
+    <label for="checksb">
+        <i class="fa fa-bars" id="btn"></i>
+        <i class="fa fa-close" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+        <nav>
+            <header><h3>Chapters</h3></header>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#personal">Personal</a></li>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#link">Links</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+    <section>
+        <!--NAVBAR-->
+        <nav class="navbar">
+            <header><h3>Home</h3></header>
+        </nav>
+
+        <!--HOME-->
+        <div class="home">
+            <h1 class="main-title">Welcome to My First Website</h1>
+        </div>
+
+        <!--CONTENT-->
+        <div class="content">
+            <div id="personal">
+                <h3 class="title">Personel</h3>
+                <img src="content/15F1B614-4028-4075-A1F4-C51ABD83525F.jpeg" class="l_img" >
+                <p>Hi everyone,</p>
+                <p>My name is Hilmi Ege Kara. I was born April 12, 2004 in Milas/Muğla one of the Turkey's province. I'm software engineering student at Kocaeli Universite. I attended Milas Merkez Primary and Secondary School, Milas Anadolu High School, after all of those Schools changed my school to Final Academy Schools at latest class in high school, from which I graduated. Then I attended Kocaeli Universite, Software engineering bachelor's degree.</p>
+                <p>If I have to list my hobbies here they are.</p>
+                <h4 class="subtitle">Hobbies</h4>
+                <ul>
+                    <li>Playing Insturment.</li><br>
+                    <li>Listening Music</li><br>
+                    <li>Improving Myself (language, knowladge, cultural etc.)</li><br>
+                    <li>Watching Series or Movies</li><br>
+                    <li>Hiking</li><br>
+                    <li>Cooking</li><br>
+                </ul>
+            </div>
+        </div>
+
+        <!--FORM-->
+        <div class="content">
+            <div id="teform">
+                <h3 class="title">Form</h3>
+                <p>If you want to contact to me fill the blanks!</p><br>
+                <form autocomplete="on">
+                    <fieldset>
+                        <legend>Personal</legend><br>
+                        <div>
+                            <table>
+                                <tr>
+                                    <th><label for="fname">First name:</label></th>
+                                    <th><input type="text" name="fname" id="fname" required><br></th>
+                                </tr>
+                                <tr>
+                                    <th><label for="sname">Second name:</label></th>
+                                    <th><input type="text" name="sname" id="sname" required><br></th>
+                                </tr>
+                                <tr>
+                                    <th><label for="mail">E-mail:</label></th>
+                                    <th><input type="email" id="email" name="email" required><br></th>
+                                </tr>
+                                    <th><label for="tel">Tel: </label></th>
+                                    <th><input type="tel" name="tel" id="tel" placeholder="(***)***-**-**" required></th>
+                                </tr>
+                            </table>
+                        </div><br>
+                        <div>
+                            <p>Please select your gender!</p>
+                            <input type="radio" name="sex" id="m">
+                            <label for="m">Male</label><br>
+                            <input type="radio" name="sex" id="f">
+                            <label for="f">Female</label><br>
+                            <input type="radio" name="sex" id="n">
+                            <label for="n">Non-binary</label>
+                        </div><br>
+                        <div>
+                            <label for="bday">Select your birthday</label>
+                            <input type="date" name="bday" id="bday" required>
+                        </div><br>
+                        <div>
+                            <label for="suggest">Please text your suggests down below!</label><br><br>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div><br>
+                        <div>
+                            <input type="submit">
+                            <input type="reset">
+                        </div>
+                    </fieldset><br>
+                </form>
+            </div>
+        </div>
+
+        <!--FOOTER-->
+        <div class="content">
+            <div id="link">
+                <h3 class="title">Links</h3>
+                <div class="links">
+                    <a href="https://github.com/yedksapka"><i class="fa fa-github"></i> Github</a><br><br>
+                    <a href="https://www.linkedin.com/in/hilmi-ege-kara-57340a255/"><i class="fa fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
